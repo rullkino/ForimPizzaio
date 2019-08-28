@@ -37,11 +37,14 @@ public class LoginActivity extends AppCompatActivity implements View.OnClickList
         switch (v.getId()){
 
             case R.id.txtCadastroClique:
-                
+                Intent cadastro = new Intent(this, MainActivity.class);
+                startActivity(cadastro);
                 break;
             case R.id.btLogin:
                 Intent login = new Intent(this, MainActivity.class);
                 startActivity(login);
+
+
                 break;
         }
     }
